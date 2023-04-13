@@ -57,7 +57,7 @@
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut 
                 dapibus, odio vel auctor porttitor, odio turpis tempor orci, 
                 vitae feugiat mi neque vitae sem. Suspendisse eleifend dui 
-                massa, id rhoncus <span>magna</spane> tincidunt at. Duis porta, 
+                massa, id rhoncus <span>magna</span> tincidunt at. Duis porta, 
                 massa ut lobortis elementum, felis urna aliquam odio, nec imperdiet 
                 risus diam ut <b>sapien</b>. Etiam a tincidunt sapien, at suscipit 
                 massa. Morbi iaculis sollicitudin nibh, eget congue metus 
@@ -81,7 +81,7 @@
                     volutpat in. Donec id posuere erat. </li>
                 <li> <i>Person 5</i>: Mauris dignissim, metus id efficitur ultrices, 
                     ipsum ante luctus neque, at malesuada nisi lorem a nibh. 
-                    Nulla a lacus orci. </li> <br>
+                    Nulla a lacus orci. </li> 
                 <li> <i>Person 6</i>: They <em>have</em> to be here. </li>
             </ul>
         </section>
@@ -95,25 +95,87 @@
             </p>
             <p>
                 Integer commodo magna id mi lobortis, ut hendrerit velit 
-                efficitur. Nam ultricies, ante id iaculis egestas, nibh purus 
+                efficitur. <br>Nam ultricies, ante id iaculis egestas, nibh purus 
                 condimentum nunc, vel finibus velit orci quis orci. Cras 
                 consequat convallis pellentesque. Quisque cursus nisi et tortor 
                 consequat, ut sollicitudin metus semper. Phasellus ut lectus 
                 convallis, semper diam ac, placerat ante. Pellentesque porta 
                 auctor maximus.
             </p>
+
+            <!-- Insert audio and video -->
+            <img src="image.png" alt="Picture of meeting notes" width="200" height="300">
+            <video controls width="300" height="400"> <source src="video.mp4" type="video/mp4"> </video>
+            <audio controls src="audio.mp3">Some audio</audio>
+
+            <details>
+                <summary>Secret message</summary>
+                <a href="https://canvas.ucsd.edu/courses/44983/assignments/617848">IMPORTANT</a>
+            </details>
         </section>
         <hr>
     </main>
 
-    
 <!-- Footer starts here -->
     <footer>
-        <h2> Recordings </h2>
-        <!-- Insert audio and video -->
-        <img src="image.png" alt="Picture of meeting notes" width="200" height="300">
-        <video controls width="300" height="400"> <source src="video.mp4" type="video/mp4"> </video>
-        <audio controls src="audio.mp3">Some audio</audio>
+        <h2> Random form </h2>
+        <form name="A random form" id="form">
+            <fieldset form="form">
+                <legend>Tell us about yourself</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text">
+                </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <input id="age" type="number">
+                </div>
+                
+                <div>
+                    <label for="fun_fact">One fun fact about yourself.</label>
+                    <textarea id="fun_fact" rows="2" cols="40">I grew up in 4 different countries...
+                    </textarea>
+                </div>
+                
+                <div>
+                    <label>What's your major or are you a TA or professor?</label>
+                    <input list="options">
+                    <datalist id="options">
+                        <option value="CE">
+                        <option value="CS">
+                        <option value="Other">
+                        <option value="Professor">
+                        <option value="TA">
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="animal-select">
+                        What is your favourite animal in this list? 
+                    </label>
+                    <select name="animals" id="animal-select">
+                        <option value="">Choose an option</option>
+                        <option value="">Cat</option>
+                        <option value="">Dog</option>
+                        <option value="">Frog</option>
+                        <option value="">Horse</option>
+                        <option value="">Hamster</option>
+                        <option value="">Lion</option>
+                        <option value="">Cheetah</option>
+                        <option value="">Dolphin</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <button>
+                        Submit
+                    </button>
+                </div>
+
+            </fieldset>
+
+        </form>
     </footer>
 
 </body>
