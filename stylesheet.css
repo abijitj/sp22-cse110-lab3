@@ -1,8 +1,12 @@
 
-/* download some fonts */ 
+/* download a font */ 
 @font-face {
     font-family: "fontBruno";
     src: url("BrunoAceSC-Regular.ttf");
+}
+
+* {
+    margin-left: 1ex; 
 }
 
 
@@ -14,7 +18,7 @@
 }
 
 /* flex layout for attendance list */ 
-.attendance-container {
+ul[class="attendance-container"] {
     display: flex; 
     flex-direction: column; 
     justify-items: left;
@@ -22,7 +26,7 @@
     list-style: square; 
 }
 
-.attendance-person {
+li.attendance-person {
     background-color: green; 
     margin-right: 0px;
     padding-right: 0px;  
@@ -37,9 +41,9 @@
 }
 
 /* To make the left border clear */
-body { 
+#body-id { 
     border-left: solid 1ex black;
-    margin: auto
+    margin: auto; 
 }
 
 header {
@@ -68,7 +72,20 @@ h1 {
     margin: 0; 
 }
 
-h2 {
+h2 + p {
+    color: blue; 
+}
+
+section ~ section {
+    color: blue; 
+}
+
+
+ul > li {
+    color: black; 
+}
+
+section h2 {
     display: inline-block; 
     text-decoration: underline; 
     border-style: dashed;
@@ -87,7 +104,7 @@ h3 {
     padding: 0.1ch
 }
 
-hr {
+hr, footer {
     margin: 0em; 
 }
 
