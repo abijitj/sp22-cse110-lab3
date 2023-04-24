@@ -13,10 +13,6 @@
     justify-items: center;
 }
 
-.grid-child {
-
-}
-
 /* flex layout for attendance list */ 
 .attendance-container {
     display: flex; 
