@@ -7,15 +7,16 @@
     <title>Meeting Minutes</title>
     <meta name="description" content="Some meeting notes">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <!-- Header starts here -->
 
 <body> 
     <header>
-        <h1>Pomodoro Timer First Brainstorming Meeting</h1>
-        <h2>Date: 12th April 2023</h2>
-        <h2>Time: 16:30PM - 17:00PM</h2>
+        <h1 style="color:blue;">Pomodoro Timer First Brainstorming Meeting</h1>
+        <h2 class="center-header">Date: 23rd April 2023</h2>
+        <h2 class="center-header">Time: 16:30PM - 17:00PM</h2>
     </header>
 
 <!-- Body starts here -->
@@ -23,20 +24,25 @@
     <main>
         <hr> 
         <section> 
-            <h2>Attendance: </h2>
-            <h3>Present: </h3>
-            <ul>
-                <li>Abijit Jayachandran</li>
-                <li>Person 2</li>
-                <li>Person 3</li>
-                <li>Person 4</li>
-                <li>Person 5</li>
-            </ul>
+            <div>
+                <h2>Attendance: </h2>
+                <h3>Present: </h3>
+                <ul class="attendance-container">
+                    <li class="attendance-person">Abijit Jayachandran</li>
+                    <li class="attendance-person">Person 2</li>
+                    <li class="attendance-person">Person 3</li>
+                    <li class="attendance-person">Person 4</li>
+                    <li class="attendance-person">Person 5</li>
+                </ul>
+            </div>
 
-            <h3>Absent: </h3>
-            <ul>
-                <li>Person 6 (<a href="person6@ucsd.edu">Email</a>)</li>
-            </ul>
+            <div>
+                <h3>Absent: </h3>
+                <ul>
+                    <li class="absent-person">Person 6 (<a href="person6@ucsd.edu">Email</a>)</li>
+                </ul>
+            </div>
+
         </section>
 
         <hr> 
@@ -103,10 +109,21 @@
                 auctor maximus.
             </p>
 
-            <!-- Insert audio and video -->
-            <img src="image.png" alt="Picture of meeting notes" width="200" height="300">
-            <video controls width="300" height="400"> <source src="video.mp4" type="video/mp4"> </video>
-            <audio controls src="audio.mp3">Some audio</audio>
+            <!-- Audio and video -->
+            <div class="grid-container">
+                <div class="grid-child">
+                    <img src="image.png" alt="Picture of meeting notes" width="200" height="300">
+                </div>
+                <div class="grid-child">
+                    <video controls width="300" height="400"> <source src="video.mp4" type="video/mp4"> </video>
+                </div>
+                
+                <div class="grid-child">
+                    <audio controls src="audio.mp3">Some audio</audio>
+                </div>
+            </div>
+            
+
 
             <details>
                 <summary>Secret message</summary>
