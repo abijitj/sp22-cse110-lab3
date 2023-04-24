@@ -1,0 +1,121 @@
+
+/* download some fonts */ 
+@font-face {
+    font-family: "fontBruno";
+    src: url("BrunoAceSC-Regular.ttf");
+}
+
+
+.grid-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0;
+    justify-items: center;
+}
+
+.grid-child {
+
+}
+
+/* flex layout for attendance list */ 
+.attendance-container {
+    display: flex; 
+    flex-direction: column; 
+    justify-items: left;
+    gap: 3px 3px; 
+    list-style: square; 
+}
+
+.attendance-person {
+    background-color: green; 
+    margin-right: 0px;
+    padding-right: 0px;  
+    text-align: left; 
+}
+
+.absent-person {
+    background-color: orange; 
+    margin-right: 0px;
+    padding-right: 0px;  
+    text-align: left; 
+}
+
+/* To make the left border clear */
+body { 
+    border-left: solid 1ex black;
+    margin: auto
+}
+
+header {
+    font-family: fontBruno; 
+    /*border: 1px solid black; */
+    position: static; 
+    background-color: rgb(255,235,205);
+    color: #a52a2a; 
+    /*border-left: solid 1ex rgb(255,235,205);*/ 
+    border-bottom: solid 8px rgb(255,235,205); 
+    padding: 0;  
+    margin-bottom: 2pt; 
+}
+
+.center-header{
+    display: block; 
+    text-align: center; 
+    margin: auto;  
+    min-width: 320px; 
+    max-width: 400px; 
+    height: 30px; 
+}
+
+h1 {
+    text-align: center; 
+    margin: 0; 
+}
+
+h2 {
+    display: inline-block; 
+    text-decoration: underline; 
+    border-style: dashed;
+    border-color: hsl(240, 100, 50); 
+    border-width: 3px; 
+    border-radius: 10px; 
+    margin: 0.5pc; 
+    padding-right: 0.5em; 
+    padding-top: 0.5em; 
+    padding-left: 0.5em;
+    padding-bottom: 0.5em; 
+}
+
+h3 {
+    position: relative; 
+    padding: 0.1ch
+}
+
+hr {
+    margin: 0em; 
+}
+
+
+img {
+    width: 300px; 
+}
+
+@media (hover: hover) {
+    button:hover {
+        color: blue;
+    }
+}
+
+@media (width: 500px){
+    body {
+        color: black; 
+    }
+}
+
+button:active{
+    box-shadow: 3px 3px 2px black; 
+}
+
+a.visited {
+    color: purple; 
+}
